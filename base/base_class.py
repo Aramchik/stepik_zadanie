@@ -11,15 +11,16 @@ class Base():
         self.phone_number = self.fake.phone_number()
         self.mailf = self.fake.email()
 
-
+# Создаем функцию для сравнения 
     def assert_word(self, word, result):
         value_word = word.text
         assert value_word == result
 
 
-
+# Создаем наш faker
     def faker_name(self):
         fake = Faker("en_US")
         name = fake.first_name()
+        
 
 
